@@ -99,7 +99,7 @@ public class KuduDynamicTableSourceSinkFactory implements DynamicTableSourceFact
 
     public static final ConfigOption<Boolean> KUDU_IGNORE_DUPLICATE =
             ConfigOptions
-                    .key("kudu.ignore-not-found")
+                    .key("kudu.ignore-duplicate")
                     .booleanType()
                     .noDefaultValue()
                     .withDescription("if true, ignore all dulicate rows");
